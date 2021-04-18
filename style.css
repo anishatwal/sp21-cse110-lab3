@@ -1,0 +1,148 @@
+/* for all elements */
+* {
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* set up for body */
+body {
+    background-color: #f2f2f2;
+    margin-top: 0cm;
+    margin-left: 0cm;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+}
+
+/* nav bar that stays at top of page */
+.navBar {
+    background-color: rgb(78, 56, 84);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10pt 10pt 10pt 10pt;
+}
+
+/* title in the nav bar */
+#navTitle {
+    color: white;
+    display: inline;
+    float: left;
+    margin: 0;
+}
+
+/* links in the nav bar */
+.navBar > a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    padding-top: 10pt;
+    padding-bottom: 10pt;
+}
+
+/* hover over nav bar links */
+.navBar > a:hover {
+    background: white;
+    color: rgb(78, 56, 84); 
+}
+
+/* create blank space around main */
+main {
+    margin: 5em 1.5em 0em 1.5em; 
+}
+
+/* change nav bar when screen small */
+@media screen and (max-width: 550px) {
+    .navBar {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+        justify-items: center;
+    }
+
+    main {
+        margin: 10em 1.5em 0em 1.5em; 
+    }
+}
+
+/* each journal entry section */
+section.entry {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+/* title of journal entry sections */
+section + h2 {
+    font-size: 25px;
+}
+
+/* paragraphs after the journal entry dates and details */
+h3 ~ p, details {
+    font-size: 18px;;
+}
+
+/* image and video */
+img, video {
+    width: 175px;
+    height: auto;
+}
+
+/* change img and video size when screen big */
+@media screen and (min-width: 550px) {
+    img, video {
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* unordered list displaying */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-position: inside;
+}
+
+/* div of submit button */
+#submit {
+    margin: auto;
+    width: 100px;
+}
+
+/* submit button in form */
+form [type="submit"] {
+    background-color: rgb(78, 56, 84);
+    color: white;
+    border-style: solid;
+    border-color: rgb(78, 56, 84);
+    border-width: 0.5ch;
+    border-radius: 0.5ch;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* submit button is clicked */
+form [type="submit"]:active {
+    background-color: white;
+    color: hsl(270, 22%, 9%);
+    border-color: hsl(270, 22%, 9%);
+}
+
+/* footer text */
+#journalBelong {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    position: relative;
+    left: 1em;
+    top: 0.25em;
+}
