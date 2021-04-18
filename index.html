@@ -6,65 +6,67 @@
         <meta name="description" content="Journal Entries">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/jpeg" href="anisha.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="navBar">
+                <p id="navTitle">Anisha's Journal</p>
                 <a href="#entries">Journal Entries</a>
                 <a href="#entryForm">New Entry Form</a>
             </nav>
-            <h1>Anisha's Journal</h1>
         </header>
 
         <main>
-            <div id="entries">
-                <section>
-                    <h2>Time to Catch Up</h2>
-                    <h3>April 7, 2020</h3>
-                    <p>I had <em>so much work</em> to do today. Here are all of the things I accomplished:</p>
-                    <ul>
-                        <li>Ran a 2 hour lab for CSE 15L.</li>
-                        <li>Read an article for POLI 28.</li>
-                        <li>Completed HW 0 for CSE 101.</li>
-                        <li>Started Lab 2 for CSE 110.</li>
-                    </ul>
-                    <audio controls>
-                        <source src="woohoo.mp3" type="audio/mp3">
-                    </audio>
-                </section>
-                <br>
-                <section>
-                    <h2>Yosemite Trip Day 2</h2>
-                    <h3>April 6, 2020</h3>
-                    <p>I woke up early to go another <b>beautiful</b> hike in Yosemite. This one was not as tough as yesterday because we did not go to the top of the fall. Here is what I did throughout the jam-packed day:</p>
-                    <ol>
-                        <li>Woke up at 7am.</li>
-                        <li>Ate a healthy breakfast of an avocado bagel and eggs.</li>
-                        <li>Drove 90 minutes into Yosemite National Park.</li>
-                        <li>Hiked past Colombia Rock.</li>
-                        <li>Hiked further to see Yosemite Falls.</li>
-                        <li>Ate lunch with an amazing view.</li>
-                        <li>Drove back to the airbnb.</li>
-                        <li>Watched lectures and did homework.</li>
-                        <li>Relaxed and ate dinner.</li>
-                        <li>Went to bed.</li>
-                    </ol>
-                    <img alt="Yosemite Falls" src="yosemiteFalls.jpeg" width="250">
-                </section>
-                <br>
-                <section>
-                    <h2>Yosemite Trip Day 1</h2>
-                    <h3>April 5, 2020</h3>
-                    <p>I went on my first hike in Yosemite! The trail was called Willow Trail, and we went <strong>all the way to the top</strong> of Vernal Falls. It was <i>very</i> difficult but definitely worth the view.</p>
-                    <details>
-                        <summary>Surprises of the Day</summary>
-                        <p>The drive into Yosemite had beautiful green moutains filled with bright orange flowers! There was also some snow towards the top of the hike!</p>
-                    </details>
-                    <video width="250" controls>
-                        <source src="vernalFalls.mp4" type="video/mp4">
-                    </video>
-                </section>
-            </div>
+            <h1>Anisha's Journal</h1>
+            <section class="entry">
+                <h2>Time to Catch Up</h2>
+                <h3>April 7, 2020</h3>
+                <p>I had <em>so much work</em> to do today. Here are all of the things I accomplished:</p>
+                <ul>
+                    <li>Ran a 2 hour lab for CSE 15L.</li>
+                    <li>Read an article for POLI 28.</li>
+                    <li>Completed HW 0 for CSE 101.</li>
+                    <li>Started Lab 2 for CSE 110.</li>
+                </ul>
+                <audio controls>
+                    <source src="woohoo.mp3" type="audio/mp3">
+                </audio>
+            </section>
+            <br>
+            <section class="entry">
+                <h2>Yosemite Trip Day 2</h2>
+                <h3>April 6, 2020</h3>
+                <p>I woke up early to go another <b>beautiful</b> hike in Yosemite. This one was not as tough as yesterday because we did not go to the top of the fall. Here is what I did throughout the jam-packed day:</p>
+                <ol>
+                    <li>Woke up at 7am.</li>
+                    <li>Ate a healthy breakfast of an avocado bagel and eggs.</li>
+                    <li>Drove 90 minutes into Yosemite National Park.</li>
+                    <li>Hiked past Colombia Rock.</li>
+                    <li>Hiked further to see Yosemite Falls.</li>
+                    <li>Ate lunch with an amazing view.</li>
+                    <li>Drove back to the airbnb.</li>
+                    <li>Watched lectures and did homework.</li>
+                    <li>Relaxed and ate dinner.</li>
+                    <li>Went to bed.</li>
+                </ol>
+                <img alt="Yosemite Falls" src="yosemiteFalls.jpeg">
+            </section>
+            <br>
+            <section class="entry">
+                <h2>Yosemite Trip Day 1</h2>
+                <h3>April 5, 2020</h3>
+                <p>I went on my first hike in Yosemite! The trail was called Willow Trail, and we went <strong>all the way to the top</strong> of Vernal Falls. It was <i>very</i> difficult but definitely worth the view.</p>
+                <details>
+                    <summary>Surprises of the Day</summary>
+                    <p>The drive into Yosemite had beautiful green moutains filled with bright orange flowers! There was also some snow towards the top of the hike!</p>
+                </details>
+                <video controls>
+                    <source src="vernalFalls.mp4" type="video/mp4">
+                </video>
+            </section>
             <br><br>
             <hr>
             <br><br>
@@ -115,7 +117,7 @@
                         <br>
                         <label>Entry:</label>
                         <textarea rows="4" cols="50"></textarea><br><br>
-                        <button>Submit</button>
+                        <div id="submit"><input type="submit"></button></div>
                     </fieldset>
                 </form>
             </div>
@@ -124,7 +126,7 @@
 
         <footer>
             <hr>
-            <p>This journal belongs to: <span>Anisha Atwal</span></p>
+            <div id="journalBelong">This journal belongs to: <span>Anisha Atwal</span></div>
         </footer>
     </body>
 </html>
